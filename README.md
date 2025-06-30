@@ -34,7 +34,7 @@ git clone https://github.com/luisdandolini/sveltekit-agify.git
 cd sveltekit-agify
 
 # Instale as dependências
-npm install
+yarn install
 
 # Rode a aplicação
-npm run dev
+yarn dev
