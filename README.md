@@ -1,38 +1,40 @@
-# sv
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+# 🔮 Descobridor de Idades
 
-## Creating a project
+Uma aplicação simples feita com **SvelteKit** que estima a idade de uma pessoa com base em seu nome, utilizando a [API Agify.io](https://agify.io/).
 
-If you're seeing this, you've probably already done this step. Congrats!
+> Projeto desenvolvido como parte de um teste técnico.
+
+---
+
+## 📺 Demonstração
+
+🖥️ [Acesse o app em produção (Vercel)](https://sveltekit-agify.vercel.app/)
+
+---
+
+## ✨ Funcionalidades
+
+- Input de texto para digitar o nome da pessoa.
+- Consulta automática à API (com **debounce de 1 segundo**).
+- Exibição da idade estimada de forma visual e animada.
+- A URL é atualizada dinamicamente com a query `?name=`, permitindo compartilhamento direto do resultado.
+- Feedback de carregamento com animação de **spinner**.
+- Estilização customizada com CSS puro (sem bibliotecas externas).
+
+---
+
+## 🧪 Como testar localmente
 
 ```bash
-# create a new project in the current directory
-npx sv create
+# Clone o repositório
+git clone https://github.com/luisdandolini/sveltekit-agify.git
 
-# create a new project in my-app
-npx sv create my-app
-```
+# Acesse a pasta do projeto
+cd sveltekit-agify
 
-## Developing
+# Instale as dependências
+npm install
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+# Rode a aplicação
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
